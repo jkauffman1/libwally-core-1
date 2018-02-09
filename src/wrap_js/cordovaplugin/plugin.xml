@@ -33,6 +33,7 @@
         <config-file target="config.xml" parent="/*">
             <preference name="UseLegacySwiftLanguageVersion" value="true" />
             <preference name="UseSwiftLanguageVersion" value="2" />
+            <preference name="swift-version" value="2.3" />
             <feature name="Wally">
                 <param name="ios-package" value="WallyCordova"/>
             </feature>
