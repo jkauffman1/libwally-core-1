@@ -31,6 +31,7 @@
         <source-file src="WallyModule/module.map" target-dir="Wally" />
         <source-file src="WallyModule/wally_define_javascript_build.h" target-dir="Wally" />
         <config-file target="config.xml" parent="/*">
+            <preference name="UseLegacySwiftLanguageVersion" value="true" />
             <feature name="Wally">
                 <param name="ios-package" value="WallyCordova"/>
             </feature>
