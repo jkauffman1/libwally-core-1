@@ -4,6 +4,7 @@
     <name>cordova-plugin-wally</name>
     <description>Cordova Wally Plugin</description>
     <keywords>wally,libwally,blockstream</keywords>
+
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <preference name="AndroidLaunchMode" value="singleTop" />
@@ -21,12 +22,12 @@
         <source-file src="WallyCordova.java" target-dir="src/com/blockstream/libwally" />
         <source-file src="Wally.java" target-dir="src/com/blockstream/libwally" />
     </platform>
+
     <platform name="ios">
         <source-file src="WallyCordova.swift" target-dir="Wally" />
-	<source-file src="libwally-core-ios.xcodeproj" target-dir="" />
-	<source-file src="WallyModule/module.map" target-dir="Wally" />
-	<source-file src="WallyModule/wally_define_javascript_build.h" target-dir="Wally" />
-
+        <source-file src="libwally-core-ios.xcodeproj" target-dir="" />
+        <source-file src="WallyModule/module.map" target-dir="Wally" />
+        <source-file src="WallyModule/wally_define_javascript_build.h" target-dir="Wally" />
         <config-file target="config.xml" parent="/*">
             <feature name="Wally">
                 <param name="ios-package" value="WallyCordova"/>
