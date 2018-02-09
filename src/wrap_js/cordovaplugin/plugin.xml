@@ -5,7 +5,7 @@
     <description>Cordova Wally Plugin</description>
     <keywords>wally,libwally,blockstream</keywords>
 
-    <dependency id="cordova-plugin-add-swift-support" version="1.6.0" />
+    <dependency id="cordova-plugin-add-swift-support" version="1.7.1" />
 
     <platform name="android">
         <config-file target="config.xml" parent="/*">
