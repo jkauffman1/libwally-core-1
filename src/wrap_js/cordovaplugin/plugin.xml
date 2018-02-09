@@ -20,12 +20,8 @@
         <source-file src="jniLibs/x86_64/libwallycore.so" target-dir="libs/x86_64" />
         <source-file src="WallyCordova.java" target-dir="src/com/blockstream/libwally" />
         <source-file src="Wally.java" target-dir="src/com/blockstream/libwally" />
-        <!-- <js-module src="wally_built.js" name="Wally">
-            <clobbers target="window.Wally" />
-        </js-module> -->
     </platform>
     <platform name="ios">
-<!--        <source-file src="libsecp256k1/src/basic-config.h" target-dir="libsecp256k1" /> -->
         <source-file src="WallyCordova.swift" target-dir="Wally" />
 	<source-file src="libwally-core-ios.xcodeproj" target-dir="" />
 	<source-file src="WallyModule/module.map" target-dir="Wally" />
@@ -37,6 +33,5 @@
             </feature>
         </config-file>
         <hook type="after_plugin_install" src="scripts/add_swift_support.js" />
-        <!-- <hook type="after_plugin_install" src="scripts/add_secp_config.js" /> -->
     </platform>
 </plugin>
