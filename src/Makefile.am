@@ -6,6 +6,7 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
 noinst_LTLIBRARIES =
 
 include_HEADERS =
+include_HEADERS += $(top_srcdir)/include/wally.hpp
 include_HEADERS += $(top_srcdir)/include/wally_address.h
 include_HEADERS += $(top_srcdir)/include/wally_bip32.h
 include_HEADERS += $(top_srcdir)/include/wally_bip38.h
@@ -170,6 +171,7 @@ libwallycore_la_SOURCES = \
     ccan/ccan/str/hex/hex.c
 
 libwallycore_la_INCLUDES = \
+    include/wally.hpp \
     include/wally_address.h \
     include/wally_bip32.h \
     include/wally_bip38.h \
