@@ -1224,10 +1224,22 @@ int wally_tx_get_signature_hash(const struct wally_tx *tx,
     if ((ret = tx_to_bytes(tx, &opts, 0, buff_p, n, &n2)) != WALLY_OK)
         goto fail;
 
+    printf("JKDBG WALLY sighash preimage = ");
+    for (int i_ = 0; i_ < n2; i_ = i_ + 1) {
+        printf("%02x", buff_p[i_]);
+    }
+    printf("\n");
+
     if (n != n2)
         ret = WALLY_ERROR; /* tx_get_length/tx_to_bytes mismatch, should not happen! */
     else
         ret = wally_sha256d(buff_p, n2, bytes_out, len);
+
+    printf("JKDBG WALLY sighash = ");
+    for (int i_ = 0; i_ < len; i_ = i_ + 1) {
+        printf("%02x", bytes_out[i_]);
+    }
+    printf("\n");
 
 fail:
     if (buff_p != buff)
