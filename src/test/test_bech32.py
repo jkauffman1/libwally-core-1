@@ -6,6 +6,8 @@ valid_cases = {
         ["bc", 0, '0014751e76e8199196d454941c45d1b3a323f1433bd6'],
     'tb1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3q0sl5k7':
         ["tb", 0, '00201863143c14c5166804bd19203356da136c985678cd4d27a1b8c6329604903262'],
+    'bcrt1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qzf4jry':
+        ["bcrt", 0, '00201863143c14c5166804bd19203356da136c985678cd4d27a1b8c6329604903262'],
     'bc1pw508d6qejxtdg4y5r3zarvary0c5xw7kw508d6qejxtdg4y5r3zarvary0c5xw7k7grplx':
         ["bc", 1, '5128751e76e8199196d454941c45d1b3a323f1433bd6751e76e8199196d454941c45d1b3a323f1433bd6'],
     'BC1SW50QA3JX3S':
