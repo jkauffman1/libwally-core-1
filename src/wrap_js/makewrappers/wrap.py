@@ -255,8 +255,17 @@ FUNCS_NODE = [
         'uint32_t[prefix]',
         'out_str_p'
      ])),
+    ('wally_confidential_addr_to_addr_segwit', F([
+        'string[address]',
+        'string[confidential_prefix]',
+        'string[prefix]',
+        'out_str_p'
+     ])),
     ('wally_confidential_addr_to_ec_public_key', F([
         'string[address]', 'uint32_t[prefix]', 'out_bytes_fixedsized'
+    ], out_size='33')),
+    ('wally_confidential_addr_segwit_to_ec_public_key', F([
+        'string[address]', 'out_bytes_fixedsized'
     ], out_size='33')),
 ]
 
