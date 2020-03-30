@@ -254,7 +254,7 @@ WALLY_CORE_API int wally_confidential_addr_from_addr(
  * Extract the segwit native address from a confidential address.
  *
  * :param address: The blech32 encoded confidential address to extract the address from.
- * :param confidential_addr_family: The confidential address family to generate.
+ * :param confidential_addr_family: The confidential address prefix byte.
  * :param addr_family: The address family to generate.
  * :param output: Destination for the resulting address string.
  *|    The string returned should be freed using `wally_free_string`.
